@@ -1,0 +1,149 @@
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+.hero {
+    background-image: url(bg.webp);
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    color: white;
+    text-align: center;
+    padding: 50px 0;
+    height: 100vh; 
+}
+.feature-card {
+    transition: transform 0.3s, box-shadow 0.3s;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+.feature-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.footer {
+    position:fixed;
+    left:0px;
+    bottom:0px;
+    height:30px;
+    width:100%;
+}
+
+svg path {
+    fill: transparent;
+    stroke: white;
+    stroke-width: 0.1;
+    stroke-dasharray: 50;
+    stroke-dashoffset: 50;
+    animation: textAnimation1 2s ease-in-out 1 forwards;
+}
+ 
+@keyframes textAnimation1 {
+    0% {
+        stroke-dashoffset: 50;
+    }
+    80% {
+        fill: transparent;
+    }
+    100% {
+        fill: white;
+        stroke-dashoffset: 0;
+    }
+}
+
+
+.ani1 {
+    opacity: 0; 
+    animation: fadeIn 4s ease-in-out forwards;
+}
+
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0; 
+    }
+    100% {
+        opacity: 1; 
+    }
+}
+
+
+
+.thirdpath {
+    border-top: 2px solid #6c757d;
+    margin-top: 50px;
+    padding-top: 0px;
+    position: relative;
+    
+    text-align: center;
+    font-size: 2rem;
+    background-color: white; 
+    color: black; 
+    transition: background-color 0.5s ease, color 0.5s ease; /* Transición suave */
+    
+    
+}
+
+
+/* Configuración básica */
+.container1 {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Estilo para la lista */
+.process-list {
+    padding: 0;
+}
+
+.process-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* Estilo para las imágenes */
+.process-icon {
+    width: 50px; /* Tamaño de las imágenes */
+    height: 50px;
+    object-fit: contain;
+}
+
+/* Estilo para el texto */
+.process-text {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    color: #333;
+}
+
+/* Ajustes básicos */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.alternating-sections .row {
+    margin-bottom: 50px;
+}
+
+/* Estilo de las imágenes */
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px; /* Opcional: bordes redondeados */
+}
+
+/* Estilo del texto */
+.alternating-sections h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.alternating-sections p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #555;
+}
